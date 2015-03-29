@@ -1,0 +1,24 @@
+{
+  "name": "full-deck",
+  "version": "0.1.0",
+  "description": "Separates what the system is from what the system does.",
+  "main": "full-deck.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "intern-client config=tests/intern.js"
+  },
+  "author": "Tony Taylor <tony@tonetaylor.com>",
+  "license": "ISC",
+  "dependencies": {
+    "lemonad": "^0.7.4",
+    "lodash": "^3.3.0",
+    "minpubsub": "0.0.1",
+    "requirejs": "^2.1.16",
+    "winston": "^0.9.0"
+  },
+  "devDependencies": {
+    "intern": "^2.2.2"
+  }
+}
