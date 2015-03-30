@@ -38,7 +38,7 @@ define([
 		 	};
 		}
 
-		var moneyTransfer = Context(enactor);
+		var moneyTransfer = Context(enactor, {});
 
 		bdd.it('should not blow up', function() {
 			expect(moneyTransfer).to.be.ok;
@@ -53,7 +53,7 @@ define([
 		//moneyTransfer(400);
 		bdd.it('should take a function', function() {
 			expect(enactor).to.be.a('Function');
-			expect(function() { Context(enactor); }).to.not.throw(Error);
+			expect(function(){ Context(enactor, {}); }).to.not.throw(Error);
 		});
 		bdd.it('should return a function', function () {
 			expect(moneyTransfer).to.be.ok;
