@@ -1,9 +1,9 @@
 /* jshint node:true */
-var rjs = require('requirejs');
+var r = require('requirejs');
 
-rjs.config({ nodeRequire: require, paths: { 'fulldeck': '../lib' } });
+r.config({ nodeRequire: require, paths: { 'fulldeck': '../lib' } });
 
-rjs(['lodash', 'fulldeck/context'], function(_, ctx) {
+r(['fulldeck/context'], function(ctx) {
 	var robustScenario = ctx({
 		roles: {
 			'source-account': {
