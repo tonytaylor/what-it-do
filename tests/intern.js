@@ -97,6 +97,6 @@ define({
 	excludeInstrumentation: /^(?:tests|node_modules)\//,
 
     reporters: [
-        { id: 'cobertura', filename: 'report.xml' }
+        'cobertura'
     ]
 });
