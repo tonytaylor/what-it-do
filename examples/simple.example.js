@@ -27,5 +27,5 @@ r(['lemonad', 'deck/context', 'deck/role'], function(L, ctx, role) {
         };
 	}, {data: x});
 
-    var = simpleScenario('hello?');
+    simpleScenario('hello?');
 });
