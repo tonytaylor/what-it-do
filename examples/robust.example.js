@@ -27,6 +27,16 @@ rjs(['lodash', 'fulldeck/context'], function(_, ctx) {
 			src     = this.associate('source-account', acctOne),
 			dest    = this.associate('destination-account', acctTwo);
 
+		/**
+		 * CHANGE:
+		 * var src = this.associate('foo', acct1),
+		 * 	   des = this.associate('bar', acct2);
+		 *
+		 * TO:
+		 * var accts = this.associate({ 'foo': acct1, 'bar': acct2 });
+		 *
+		 * console.log(accts); // -> { 'src': . . ., 'dest': . . . }
+		 */
 		console.log('source account: ', src);
 		console.log('destination account: ', dest);
 
