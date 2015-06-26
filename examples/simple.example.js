@@ -4,7 +4,7 @@ var r = require('requirejs');
 r.config({ nodeRequire: require, paths: { 'deck': '../lib' } });
 
 r(['lemonad', 'deck/context', 'deck/role'], function(L, ctx, role) {
-	var x = [
+	var records = [
 		{ name: 'Tony Taylor', title: 'Web Application Developer' },
 		{ name: 'Jane Lane', title: 'User Experience Developer' },
 		{ name: 'Marina James', title: 'Product Manager' }
@@ -25,7 +25,7 @@ r(['lemonad', 'deck/context', 'deck/role'], function(L, ctx, role) {
             console.log('%o', L.toArray(arguments));
             console.log('perform extra stuff here. . .');
         };
-	}, {data: x});
+	}, {data: records});
 
     simpleScenario('hello?');
 });
